@@ -31,6 +31,6 @@ var_dump('02'=='2');// равно после преобразования тип
 echo'<br>';
 var_dump('*');// тип,кол-во символов
 echo'<br>';
-var_dump($x=true or true);
+var_dump($x=true xor true);
 echo'<br>';
 var_dump('$x'); //тип,кол-во символов
