@@ -3,24 +3,66 @@
 echo '1) Программа, которая составляет и выводит таблицу истинности';
 echo '<br>';
 
-$a=1;
-$b=0;
-$ab=$a*$b;
-if($a!==0 && $b!==0)
-    {
-        $c=1;
-        echo 'a = '. $a .' , '. 'b = ' . $b . ' , ' . ' a^b = '. $c;
-    }
-else
-{
-    echo 'a = '. $a .' , '. 'b = ' . $b . ' , ' . ' a^b = '. $ab;
-}
+$a=[    'a b a ^ b ',
+        '0 0=> 0 ',
+        '0 1=> 0 ' ,
+        '1 0=> 0 ',
+        '1 1=> 1'
+];
 
-
-
-
-echo'<br>';
 ?>
+<table border="1">
+<?php
+foreach ($a as $value){
+    ?>
+    <tr>
+    <td><?php echo $value;?></td>
+    </tr>
+    <?php
+}
+    ?>
+</table>
+<?php
+echo'<br>';
+$b=['a b a || b',
+    '0 0 =>0 ',
+    '0 1 =>1 ' ,
+    '1 0 =>1 ',
+    '1 1 =>1'
+];
+?>
+<table border="1">
+    <?php
+    foreach ($b as $value){
+        ?>
+        <tr>
+        <td><?php echo $value;?></td>
+        </tr>
+        <?php
+    }
+    ?>
+</table>
+<?php
+echo'<br>';
+$c=['a b a xor b',
+    '0 0 => 0 ',
+    '0 1 => 1 ' ,
+    '1 0 => 1 ',
+    '1 1 => 0'
+];
+?>
+<table border="1">
+    <?php
+    foreach ($c as $value){
+        ?>
+        <tr>
+            <td><?php echo $value;?></td>
+        </tr>
+        <?php
+    }
+    ?>
+</table>
+
 <hr>
 <?php
 echo '2) Функция вычисления дискриминанта квадратного уравнения.Программа, которая решает квадратное уравнение. <br>';
