@@ -15,7 +15,7 @@ foreach ($guestBook->getrecords() as $record) { ?>
     </article>
 <?php } ?>
 <hr>
-<form method="post" action="append.php">
+<form method="post" action="../sixth/append.php">
     Введите новую запись
     <br>
     <input type="text" name="new_line"></input>
