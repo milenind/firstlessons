@@ -1,5 +1,5 @@
 <?php
-$path = '1.txt';
+$path = 'guestbook.txt';
 $fo = fopen($path, 'r');
 while (!feof($fo)) {
     $line = fgets($fo) . '<hr>';
