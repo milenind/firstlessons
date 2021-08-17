@@ -7,7 +7,7 @@ class DB
 
     public function __construct()
     {
-        $this->db = new PDO('mysql:host=localhost;dbname=eighth', 'root', 'root');
+        include "connect.php";
     }
 
     /**

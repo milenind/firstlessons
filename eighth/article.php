@@ -8,6 +8,11 @@ $sql = 'select * from articles where id = :id or name = :name or author=:author 
 $data = [':id' => $_GET['id'], ':name' => $_GET['name'], ':author' => $_GET['author'], ':text' => $_GET['text']];
 $resQuery = $db->query($sql, $data);
 echo '<pre>';
-foreach ($resQuery as $item) {
-    echo $item['id'] . ' ' . $item['name'] . ' ' . $item['author'] . ' ' . $item['text'];
-}
+foreach ($resQuery as $item) { ?>
+    <div style="white-space: normal">
+        <article style="background:grey;color:whitesmoke">
+           <?php echo 'Название статьи : ' . $item['name'] . '<br>' . '<br>' . $item['text'] . '<br>' ;?>
+        </article>
+        <br>
+    </div>
+<?php } ?>

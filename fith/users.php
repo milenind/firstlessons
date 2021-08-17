@@ -1,13 +1,13 @@
 <?php
 if (isset($_POST['sign'])) {
-    if (empty($_POST['new_login'])) {
-        exit('Необходимо заполнить все поля');
+    if (empty($_POST['new_login'])|| empty($_POST['new_pass'])) {
+        die('Необходимо заполнить все поля');
     }
     setcookie('username', $_POST['new_login']);
     setcookie('password', sha1($_POST['new_pass']));
     echo 'Вы успешно авторизовались!';
     echo '<br>';
-    ?><a href="fith.php">На главную</a><?php
+    ?><a href="../nineth/nineth.php">На главную</a><?php
     die;
 };
 ?>
@@ -20,7 +20,7 @@ if ($_COOKIE['username'] == $_POST['login'] && $_COOKIE['password'] == sha1($_PO
 
 ?>
     <hr>
-    <form method="post" action="users.php">
+    <form method="post" >
         Введите логин
         <input type="text" name="new_login"/><br>
         Введите пароль
