@@ -4,11 +4,16 @@ class DB
 {
     protected $db;
 
+
     public function __construct()
     {
         $this->db = new PDO('mysql:host=localhost;dbname=eighth', 'root', 'root');
     }
 
+    /**
+     * @param string $sql
+     * @return bool
+     */
     public function execute(string $sql): bool
     {
         $sth = $this->db->prepare($sql);
@@ -24,6 +29,14 @@ class DB
     {
         $sth = $this->db->prepare($sql);
         $sth->execute($data);
+        return $sth->fetchall();
+
+    }
+
+    public function lightquery($sql)
+    {
+        $sth = $this->db->prepare($sql);
+        $sth->execute();
         return $sth->fetchall();
     }
 }
