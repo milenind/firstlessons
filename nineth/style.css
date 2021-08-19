@@ -1,0 +1,80 @@
+.body {
+    background: url("img/1.jpg");
+}
+
+.about {
+    width: 100%;
+    white-space: normal;
+    background: #cbc1c1;
+    float: right;
+    border-radius: 5px;
+}
+
+.disc {
+    width: 100%;
+    white-space: normal;
+    background: #cbc1c1;
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.alboms {
+    background-color: #cbc1c1;
+    padding: 1px;
+    float: left;
+    width: 210px;
+    white-space: normal;
+    display: inline-block;
+    margin: 10px;
+    height: 450px;
+    border-radius: 3%;
+    text-align: center;
+
+}
+
+.addalboms {
+    width: 100%;
+    padding-top: 10px;
+    white-space: normal;
+    background: #cbc1c1;
+    float: left;
+    text-align: center;
+    margin: 0 0% 0 0%;
+    border-radius: 5px;
+}
+
+.gallery {
+    width: 100%;
+    white-space: normal;
+    background: #cbc1c1;
+    float: right;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+
+.image {
+    background-color: #cbc1c1;
+    padding: 1px;
+    float: left;
+    width: 200px;
+    white-space: normal;
+    display: inline-flex;
+    margin: 10px;
+    height: 200px;
+    border-radius: 3%;
+    text-align: center;
+}
+
+.addimg {
+    width: 100%;
+    padding-top: 10px;
+    white-space: normal;
+    background: #cbc1c1;
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+}
