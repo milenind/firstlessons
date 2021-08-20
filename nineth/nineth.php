@@ -1,3 +1,7 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+</head>
+<body class="maindiv">
 <?php
 session_start();
 setcookie('username', 'admin');
@@ -26,21 +30,15 @@ setcookie('password', sha1(123456));
 <body>
 </body>
 </html>
-<?php
-if (isset($_POST['send'])) {
-    if (empty($_POST['login']) || empty($_POST['pass'])) {
-        die('Необходимо заполнить все поля');
-    }
-}
-?>
 <div>
-    <form method="post" action="web.php">
+    <form style="text-align: center;color: white" method="post" action="Controlers/web.php">
         Введите логин
-        <input type="text" name="login"/><br>
+        <input type="text" required autocomplete="off" name="login"/><br>
         Введите пароль
-        <input type="password" name="pass"/><br>
+        <input type="password" required autocomplete="off" name="pass"/><br>
         <button type="submit" name="send">Войти</button>
     </form>
     <br>
     <hr>
 </div>
+</body>

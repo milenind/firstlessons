@@ -1,51 +1,30 @@
-<div style="background: darkturquoise">
+<head>
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
+</head>
+<body class="maindiv">
+<div>
 
-    <div style="width: 100%; /* Ширина слоя */
-            white-space: normal;
-            background: slateblue;
-            float: right;
-            color:whitesmoke">
+    <div class="about">
         <h1 style="text-align: center">Веб приложение о любимом исполнителе</h1>
-        <img src="img/mark.jpg" style="width:100px; height:100px;">
-        <p style="float: right">Markul[5] (рус. Марку́л, полное имя Марк Вадимович Марку́л; род. 31 марта 1993 года,
+        <img src="img/mark.jpg" style="width:100px; height:100px;padding-left: 10px">
+        <p style="float: right;padding-left: 10px">Markul[5] (рус. Марку́л, полное имя Марк Вадимович Марку́л; род. 31 марта 1993 года,
             Москва, Россия) — российский хип-хоп-исполнитель, певец, автор песен и член творческого объединения «Green
             Park Gang». За свою музыкальную карьеру выпустил 2 студийных альбома, 2 мини-альбома, 1 микстейп и множество
             синглов.</p>
     </div>
 
-    <div style="width: 100%; /* Ширина слоя */
-            white-space: normal;
-            background: slateblue;
-            float: right;
-            color:whitesmoke;
-            text-align: center;
-            margin-top: 10px">
+    <div class="disc">
         <h2>Дискография</h2>
     </div>
     <?php
-    require '../eighth/DB.php';
+    require 'Models/DB.php';
     $db = new DB();
     $queryString = 'SELECT * FROM singer';
     $res = $db->execute($queryString);
     $sql1 = 'select description,name,id,imgpath,age from singer order by age ';
     $resLightQuery = $db->lightquery($sql1);
     foreach ($resLightQuery as $sing) { ?>
-        <style>
-            .layer1 {
-                background-color: slateblue; /* Цвет фона слоя */
-                padding: 1px; /* Поля вокруг текста */
-                float: left; /* Обтекание по правому краю */
-                width: 210px; /* Ширина слоя */
-                white-space: normal;
-                display: inline-block;
-                margin: 10px;
-                height: 450px;
-                color: whitesmoke;
-                border-radius: 3%;
-            }
-        </style>
-
-        <div class="layer1">
+        <div class="alboms">
             <div>
                 <?php echo 'Альбом - ' . $sing['name'] . '<br>' . $sing['age'] . '<br>' . '<img src="img/' . $sing['imgpath'] .
                     '"style="width:100px;height:100px;border-radius:3%;">' .
@@ -54,13 +33,7 @@
         </div>
     <?php }
     ?>
-    <div style="width: 100%; /* Ширина слоя */
-            white-space: normal;
-            background: slateblue;
-            float: right;
-            color:whitesmoke;
-            text-align: center;
-            margin-top: 10px">
+    <div class="gallery">
         <h2>Фотогалерея</h2>
     </div>
 
@@ -72,29 +45,12 @@
     foreach ($resLightQuery1
 
              as $img) { ?>
-        <style>
-            .layer2 {
-                background-color: slateblue; /* Цвет фона слоя */
-                padding: 1px; /* Поля вокруг текста */
-                float: left; /* Обтекание по правому краю */
-                width: 200px; /* Ширина слоя */
-                white-space: normal;
-                display: inline-flex;
-                margin: 10px;
-                height: 200px;
-                color: whitesmoke;
-                border-radius: 3%;
-                text-align: center;
-            }
-        </style>
-
-        <div class="layer2">
+        <div class="image">
             <?php echo '<img src="img/' . $img['img'] . '"style="width:200px;height:200px">' ?>
         </div>
     <?php } ?>
-
-
 </div>
 <form style="text-align: center" action="nineth.php">
     <button>Перейти на админ версию</button>
 </form>
+</body>

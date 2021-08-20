@@ -1,11 +1,11 @@
-.body {
-    background: url("img/1.jpg");
+.maindiv {
+    background: url("../img/img/main.jpg");
 }
 
 .about {
     width: 100%;
     white-space: normal;
-    background: #cbc1c1;
+    background: #879a9f;
     float: right;
     border-radius: 5px;
 }
@@ -13,7 +13,7 @@
 .disc {
     width: 100%;
     white-space: normal;
-    background: #cbc1c1;
+    background: #879a9f;
     float: right;
     text-align: center;
     margin-top: 10px;
@@ -21,7 +21,7 @@
 }
 
 .alboms {
-    background-color: #cbc1c1;
+    background-color: #879a9f;
     padding: 1px;
     float: left;
     width: 210px;
@@ -38,7 +38,7 @@
     width: 100%;
     padding-top: 10px;
     white-space: normal;
-    background: #cbc1c1;
+    background: #879a9f;
     float: left;
     text-align: center;
     margin: 0 0% 0 0%;
@@ -48,7 +48,7 @@
 .gallery {
     width: 100%;
     white-space: normal;
-    background: #cbc1c1;
+    background: #879a9f;
     float: right;
     text-align: center;
     margin-top: 30px;
@@ -56,7 +56,7 @@
 }
 
 .image {
-    background-color: #cbc1c1;
+    background-color: #879a9f;
     padding: 1px;
     float: left;
     width: 200px;
@@ -72,9 +72,29 @@
     width: 100%;
     padding-top: 10px;
     white-space: normal;
-    background: #cbc1c1;
+    background: #879a9f;
     float: right;
     text-align: center;
     margin-top: 10px;
+    border-radius: 5px;
+}
+.noadmin{
+    width: 100%;
+    white-space: normal;
+    background: #879a9f;
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.admin{
+    width: 100%;
+    white-space: normal;
+    background: #879a9f;
+    float: right;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }

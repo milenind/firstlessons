@@ -1,5 +1,5 @@
 <?php
-require '../eighth/DB.php';
+require '../Models/DB.php';
 $db = new DB();
 $queryString2 = 'INSERT INTO singer';
 $res2 = $db->execute($queryString2);

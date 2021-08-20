@@ -1,7 +1,7 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="Style/style.css">
 </head>
-<body>
+<body class="maindiv">
 <div class="about">
     <h1 style="text-align: center">Веб приложение о любимом исполнителе</h1>
     <img src="img/mark.jpg" style="width:100px; height:100px;margin-left: 10px">
@@ -15,7 +15,7 @@
     <h2>Дискография</h2>
 </div>
 <?php
-require '../eighth/DB.php';
+require 'Models/DB.php';
 $db = new DB();
 $queryString = 'SELECT * FROM singer';
 $res = $db->execute($queryString);
@@ -33,11 +33,11 @@ foreach ($resLightQuery as $sing) { ?>
 <?php }
 ?>
 <div class="addalboms">
-    <form action="insert.php" method="post">
-        <input type="text" name="name"> Введите название альбома<br>
-        <input type="text" name="description"> Введите описание альбома<br>
-        <input type="text" name="age"> Введите год альбома<br>
-        <input type="text" name="imgpath"> Введите адрес обложки<br>
+    <form action="Controlers/insert.php" method="post">
+        <input type="text" name="name" required autocomplete="off"> Введите название альбома<br>
+        <input type="text" name="description" required autocomplete="off"> Введите описание альбома<br>
+        <input type="text" name="age" required autocomplete="off"> Введите год альбома<br>
+        <input type="text" name="imgpath" required autocomplete="off"> Введите адрес обложки<br>
         <button name="send">Добавить альбом</button>
     </form>
 </div>
@@ -57,19 +57,11 @@ foreach ($resLightQuery1 as $img) { ?>
 <?php } ?>
 <div class="addimg">
 
-    <form action="insertimg.php" method="post" style="text-align: center">
-        Введите адрес обложки<br>
-        <input type="text" name="imgpath"><br>
-        <button name="sendimg">Добавить фото</button>
+    <form action="Controlers/insertimg.php" method="post" style="text-align: center">
+        Введите адрес фото<br>
+        <input type="text" required autocomplete="off" name="imgpath"><br>
+        <button name="sendimg" >Добавить фото</button>
     </form>
-    <?php
-    if (isset($_POST['sendimg'])) {
-        if ($_POST['imgpath'] == ' 1 ') {
-            die('Путь не введен');
-        }
-    }
-    ?>
-</div>
 </body>
 
 
