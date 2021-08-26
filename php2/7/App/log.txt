@@ -1,0 +1,96 @@
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 08:38:46 сообщение: Нужно ввести id, чтобы удалить запись
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 08:39:03 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 08:50:20 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 08:50:29 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 08:50:37 сообщение: Нужно ввести id, чтобы удалить запись
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 08:50:46 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/Model.php дата: 08.17.21 09:00:08 сообщение: Такой записи нет
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 09:02:50 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 09:03:48 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 09:04:00 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 09:08:25 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 09:24:22 сообщение: Нужно ввести id, чтобы удалить запись
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 09:26:33 сообщение: Нет автора с таким id
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 09:26:43 сообщение: Нет автора с таким id
+Путь: /Applications/MAMP/htdocs/App/Model.php дата: 08.17.21 09:26:45 сообщение: Такой записи нет
+Путь: /Applications/MAMP/htdocs/App/Model.php дата: 08.17.21 09:27:35 сообщение: Такой записи нет
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 09:28:41 сообщение: Нет автора с таким id
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 09:29:33 сообщение: Нет автора с таким id
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 09:29:39 сообщение: Нет автора с таким id
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 09:36:13 сообщение: Нет автора с таким id
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 09:36:24 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 09:41:03 сообщение: Нет автора с таким id
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:41:06 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:41:06 сообщение: Заголовок не должен начинаться с +
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:41:06 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:35 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:35 сообщение: Заголовок не должен начинаться с +
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:35 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:44 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:44 сообщение: Заголовок не должен начинаться с +
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:44 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:54 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:54 сообщение: Заголовок не должен начинаться с +
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:42:54 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:43:47 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:43:47 сообщение: Заголовок не должен начинаться с +
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:43:47 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:43:56 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:43:56 сообщение: Заголовок не должен начинаться с +
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:43:56 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:56:47 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:56:47 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:57:02 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:57:02 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:57:17 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:57:17 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:57:26 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:57:26 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:58:24 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:58:24 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:58:52 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:58:52 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:59:48 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 09:59:48 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 10:00:03 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 10:00:03 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 10:00:20 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 10:00:20 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/Controllers/Admin.php дата: 08.17.21 10:00:29 сообщение: Нет автора с таким id
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 12:42:33 сообщение: Слишком короткий заголовок
+Путь: /Applications/MAMP/htdocs/App/Models/Article.php дата: 08.17.21 12:43:50 сообщение: Слишком короткий текст
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 12:44:03 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 12:44:06 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 12:44:09 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 12:44:14 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 12:44:16 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 12:44:20 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 12:44:28 сообщение: Ошибка запроса
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:14:17 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:14:49 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:15:44 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:15:46 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:16:21 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:16:35 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:16:36 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:19:33 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:20:58 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:21:36 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:23:26 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:24:06 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:28:57 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:43:32 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:51:52 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:52:30 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:54:14 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:55:41 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:56:27 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 13:57:02 сообщение: Ошибка подключения к базе данных
+Путь: /Applications/MAMP/htdocs/App/DB.php дата: 08.17.21 14:52:58 сообщение: Ошибка подключения к базе данных
+
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.25.21 16:14:08 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/Controllers/Admin.php дата: 08.25.21 16:32:37 сообщение: Нет автора с таким id
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.25.21 16:32:50 сообщение: Слишком короткий заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.25.21 16:32:50 сообщение: Слишком короткий текст
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.25.21 16:32:59 сообщение: Слишком короткий заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.25.21 16:32:59 сообщение: Слишком короткий текст

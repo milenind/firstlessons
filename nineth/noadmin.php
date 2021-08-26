@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="Style/style.css">
+    <link rel="stylesheet" Вызвать соответствующий экшн по имени.type="text/css" href="Style/style.css">
 </head>
 <body class="maindiv">
 <div>
