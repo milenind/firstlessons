@@ -29,7 +29,7 @@
 <?php } ?>
 <br>
 <div style="text-align: center">
-    <form action="/admin/?&act=save" method="POST">
+    <form action="/admin/save" method="POST">
         <label>
             Id автора
             <input type="text" name="authorId">
@@ -50,7 +50,7 @@
 </div>
 <hr>
 <div style="text-align: center">
-    <form action="/admin/?act=delete" method="POST">
+    <form action="/admin/delete" method="POST">
         <br>
         <label>
             Id

@@ -24,10 +24,10 @@ $article = $this->article;
     Автор статьи - <?= $article->author->name ?>
 </h1>
 <h2>
-    <?= $article['title'] ?>
+  Имя статьи - <?= $article->title?>
 </h2>
 <article>
-    <?= $article['content'] ?>
+    <h2>Содержание</h2> <?= $article->content ?>
 </article>
 </body>
 </html>
