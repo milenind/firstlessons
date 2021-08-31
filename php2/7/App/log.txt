@@ -94,3 +94,36 @@
 Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.25.21 16:32:50 сообщение: Слишком короткий текст
 Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.25.21 16:32:59 сообщение: Слишком короткий заголовок
 Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.25.21 16:32:59 сообщение: Слишком короткий текст
+Путь: /home/dima/firstlessons/php2/7/App/Controllers/Admin.php дата: 08.26.21 17:40:29 сообщение: Нужно ввести id, чтобы удалить запись
+Путь: /home/dima/firstlessons/php2/7/App/Model.php дата: 08.26.21 17:41:05 сообщение: Такой записи нет
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 11:44:42 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 11:45:07 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 11:47:03 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 11:49:58 сообщение: Слишком короткий заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 11:49:58 сообщение: Слишком короткий текст
+Путь: /home/dima/firstlessons/php2/7/App/Controllers/Admin.php дата: 08.31.21 11:50:06 сообщение: Нет автора с таким id
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 11:50:16 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/Controllers/Admin.php дата: 08.31.21 14:44:30 сообщение: Нужно ввести id, чтобы удалить запись
+Путь: /home/dima/firstlessons/php2/7/App/Controllers/Admin.php дата: 08.31.21 15:05:10 сообщение: Нет автора с таким id
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:06:40 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:07:39 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:10:01 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:14:49 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:22:28 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:22:55 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:26:17 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:26:31 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:26:39 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:27:01 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:28:29 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/DB.php дата: 08.31.21 15:28:39 сообщение: Ошибка запроса
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:37:13 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:37:25 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:45:54 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:45:54 сообщение: Заголовок не должен начинаться с +
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:46:17 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:46:23 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Models/Article.php дата: 08.31.21 15:46:35 сообщение: Слишком длинный заголовок
+Путь: /home/dima/firstlessons/php2/7/App/Model.php дата: 08.31.21 17:11:58 сообщение: Такой записи нет
+Путь: /home/dima/firstlessons/php2/7/App/Model.php дата: 08.31.21 17:19:56 сообщение: Такой записи нет
+Путь: /home/dima/firstlessons/php2/7/App/Model.php дата: 08.31.21 17:19:59 сообщение: Такой записи нет

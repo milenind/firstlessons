@@ -21,10 +21,10 @@
 $new = $this->new;
 ?>
 <h1>
-  Автор новости -  <?= $new->author->name ?>
+    Автор новости - <?= $new->author->name ?>
 </h1>
 <h2>
-   Название новости - <?= $new->title ?>
+    Название новости - <?= $new->title ?>
 </h2>
 <article>
     <h2>Содержание</h2> <?= $new->content ?>

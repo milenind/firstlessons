@@ -23,7 +23,7 @@ abstract class Controller
     abstract protected function handle($params = null): void;
 
     /**
-     * @param $action
+     * @param $action - передаем нужный экшн
      * @param null $params
      */
     public function __invoke($action, $params = null): void

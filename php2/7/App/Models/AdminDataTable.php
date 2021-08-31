@@ -16,7 +16,7 @@ class AdminDataTable
     }
 
     /**
-     * @param $records
+     * @param $records - записи в бд
      * @return array
      */
     public function render($records): array

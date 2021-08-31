@@ -9,8 +9,8 @@ use App\Controller;
 class News extends Controller
 {
     /**
-     * @param null $params
-     * @throws \App\Exceptions\DBException
+     * @param null $params - параметры
+     * @throws \App\Exceptions\DBException - обработчик ошибок
      */
     protected function handle($params = null): void
     {
@@ -19,13 +19,17 @@ class News extends Controller
     }
 
     /**
-     * @param null $params
-     * @throws \App\Exceptions\DBException|\App\Exceptions\NotFoundException
+     * @param null $params - параметры
+     * @throws \App\Exceptions\DBException|\App\Exceptions\NotFoundException - обработчик ошибок
      */
     protected function viewNew($params = null): void
     {
-        // проверка на существование get id todo
-        $this->view->new = \App\Models\News::findById($_GET['id'], \App\Models\News::class);
+        // проверка на существование get id
+        if ( !empty( $_GET['id'] ) )
+        {
+            $id = $_GET['id'];
+        } else{ die('Введите id записи!');}
+        $this->view->new = \App\Models\News::findById($id, \App\Models\News::class);
         echo $this->view->display(__DIR__ . '/../../Views/new.php');
     }
 }

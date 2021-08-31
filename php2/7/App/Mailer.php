@@ -6,6 +6,10 @@ use App\Models\Message;
 
 class Mailer
 {
+    /**
+     * @param Message $message - передается сообщение
+     * @return bool
+     */
     public static function send(Message $message): bool
     {
         $credentials = include __DIR__ . '/credentials.php';

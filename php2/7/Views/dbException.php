@@ -5,6 +5,6 @@
     <title></title>
 </head>
 <body>
-<?=$this->exception->getMessage()?>
+<?= $this->exception->getMessage() ?>
 </body>
 </html>

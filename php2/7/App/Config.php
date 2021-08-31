@@ -8,7 +8,7 @@ class Config
      * @var null
      */
     protected static $object = null;
-    protected array  $data;
+    protected array $data;
 
     public function __construct()
     {

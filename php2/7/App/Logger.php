@@ -5,7 +5,7 @@ namespace App;
 class Logger
 {
     /**
-     * @param $exception
+     * @param $exception - обработчик ошибок
      */
     public static function write($exception): void
     {

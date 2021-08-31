@@ -15,8 +15,8 @@ abstract class Model
      * @param int $id - ид записи
      * @param string $class - название модели, объекты который мы хотим получить
      * @return mixed
-     * @throws Exceptions\DBException
-     * @throws NotFoundException
+     * @throws Exceptions\DBException - обработчик ошибок
+     * @throws NotFoundException - обработчик ошибок
      */
     public static function findById(int $id, string $class)
     {
@@ -34,7 +34,7 @@ abstract class Model
 
     /**
      * @return array
-     * @throws Exceptions\DBException
+     * @throws Exceptions\DBException - обработчик ошибок
      */
     public static function findAll()
     {
@@ -46,9 +46,9 @@ abstract class Model
     }
 
     /**
-     * @param $number
+     * @param $number - передается число
      * @return array
-     * @throws Exceptions\DBException
+     * @throws Exceptions\DBException - обработчик ошибок
      */
     public static function findSome($number): array
     {
@@ -59,11 +59,12 @@ abstract class Model
 
     /**
      * @return bool
-     * @throws Exceptions\DBException
+     * @throws Exceptions\DBException - обработчик ошибок
      */
     public function insert(): bool
     {
         $columnsAndData = $this->getColumnsAndDataForInsert();
+
         $columns = $columnsAndData['columns'];
         $data = $columnsAndData['data'];
         $sql = 'INSERT INTO ' . static::TABLE .
@@ -73,14 +74,18 @@ abstract class Model
 
         $db = new DB();
         $isInserted = $db->execute($sql, $data);
-        $this->id = (int)$db->getLastId();
+        if (true === $isInserted) {
+            $this->id = (int)$db->getLastId();
+        }
         return $isInserted;
     }
+
 
     /**
      * @return array
      */
-    protected function getColumnsAndDataForInsert(): array
+    protected
+    function getColumnsAndDataForInsert(): array
     {
         $fields = get_object_vars($this);
         $columns = [];
@@ -100,10 +105,13 @@ abstract class Model
 
     /**
      * @return bool
-     * @throws Exceptions\DBException
+     * @throws Exceptions\DBException - обработчик ошибок
      */
-    public function update(): bool
+    public
+    function update(): bool
     {
+        var_dump(1);
+        exit;
         $columnsAndData = $this->getColumnsAndDataForUpdate();
         $dataForImplode = $columnsAndData['dataForImplode'];
         $data = $columnsAndData['data'];
@@ -115,7 +123,8 @@ abstract class Model
     /**
      * @return array
      */
-    protected function getColumnsAndDataForUpdate(): array
+    protected
+    function getColumnsAndDataForUpdate(): array
     {
         $fields = get_object_vars($this);
         $dataForImplode = [];
@@ -131,23 +140,28 @@ abstract class Model
     }
 
     /**
+     * @param string $class - класс , объекты которого хотим получить
      * @return bool
-     * @throws Exceptions\DBException
-     * @throws NotFoundException
+     * @throws Exceptions\DBException - обработчик ошибок
+     * @throws NotFoundException - обработчик ошибок
      */
-    public function save(string $class): bool
+    public
+    function save(string $class): bool
     {
         $fields = get_object_vars($this);
+
         if (!isset($fields['id']) || !static::findById($fields['id'], $class)) {
+
             return $this->insert();
         }
         return $this->update();
     }
 
     /**
-     * @throws Exceptions\DBException
+     * @throws Exceptions\DBException - обработчик ошибок
      */
-    public function delete(): bool
+    public
+    function delete(): bool
     {
         $id = get_object_vars($this)['id'];
         $sql = 'DELETE FROM ' . static::TABLE . ' WHERE id=:id';

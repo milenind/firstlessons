@@ -7,8 +7,8 @@ use App\Controller;
 class Article extends Controller
 {
     /**
-     * @param null $params
-     * @throws \App\Exceptions\DBException
+     * @param null $params - параметры
+     * @throws \App\Exceptions\DBException -обработчик ошибок
      */
     protected function handle($params = null): void
     {
@@ -17,9 +17,9 @@ class Article extends Controller
     }
 
     /**
-     * @throws \App\Exceptions
-     * @throws \App\Exceptions\DBException
-     * @throws \App\Exceptions\NotFoundException
+     * @throws \App\Exceptions -обработчик ошибок
+     * @throws \App\Exceptions\DBException -обработчик ошибок
+     * @throws \App\Exceptions\NotFoundException -обработчик ошибок
      */
     protected function fill()
     {
@@ -32,13 +32,19 @@ class Article extends Controller
     }
 
     /**
-     * @param null $params
-     * @throws \App\Exceptions\DBException|\App\Exceptions\NotFoundException
+     * @param null $params - параметры
+     * @throws \App\Exceptions\DBException|\App\Exceptions\NotFoundException -обработчик ошибок
      */
     protected function viewArticle($params = null): void
     {
         // проверка на существование get id
-        $this->view->article = \App\Models\Article::findById($_GET['id'], \App\Models\Article::class);
+        if (!empty($_GET['id'])) {
+            $id = $_GET['id'];
+        } else {
+            die('Введите id записи!');
+        }
+
+        $this->view->article = \App\Models\Article::findById($id, \App\Models\Article::class);
         echo $this->view->display(__DIR__ . '/../../Views/article.php');
     }
 }

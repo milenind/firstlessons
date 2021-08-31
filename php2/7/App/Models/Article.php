@@ -17,8 +17,8 @@ class Article extends Model
 
     /**
      * Добавляет новую статью переданными данными $data
-     * @param array $data - данные о сстатье
-     * @throws Exceptions
+     * @param array $data - данные о статье
+     * @throws Exceptions - обработчик данных
      */
     public function fill(array $data): void
     {
@@ -29,7 +29,7 @@ class Article extends Model
         if (strlen($title) < 3) {
             $exceptions->add(new \Exception('Слишком короткий заголовок'));
         }
-        if (strlen($title) > 15) {
+        if (strlen($title) > 100) {
             $exceptions->add(new \Exception('Слишком длинный заголовок'));
         }
         if ('+' === mb_substr($title, 0, 1)) {
@@ -50,7 +50,7 @@ class Article extends Model
     }
 
     /**
-     * @param $name
+     * @param $name - передаем имя
      * @return mixed|string
      */
     public function __get($name)
@@ -65,8 +65,8 @@ class Article extends Model
     }
 
     /**
-     * @param $name
-     * @param $value
+     * @param $name - передаем имя
+     * @param $value - передаем значение
      */
     public function __set($name, $value)
     {
@@ -74,7 +74,7 @@ class Article extends Model
     }
 
     /**
-     * @param $name
+     * @param $name - передаем имя
      * @return mixed|string|null
      */
     public function __isset($name)
@@ -83,7 +83,7 @@ class Article extends Model
     }
 
     /**
-     * @param $id
+     * @param $id - передаем id
      * @return mixed
      */
     public function getAuthor($id)

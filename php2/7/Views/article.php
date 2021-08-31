@@ -24,7 +24,7 @@ $article = $this->article;
     Автор статьи - <?= $article->author->name ?>
 </h1>
 <h2>
-  Имя статьи - <?= $article->title?>
+    Имя статьи - <?= $article->title ?>
 </h2>
 <article>
     <h2>Содержание</h2> <?= $article->content ?>

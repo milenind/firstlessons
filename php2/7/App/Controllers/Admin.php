@@ -5,14 +5,17 @@ namespace App\Controllers;
 use App\Controller;
 use App\Models\AdminDataTable;
 
+/**
+ * класс для вьюшки Admin
+ */
 class Admin extends Controller
 {
     /**
-     * @throws \App\Exceptions
-     * @throws \App\Exceptions\DBException
-     * @throws \App\Exceptions\NotFoundException
+     * @throws \App\Exceptions -обработчик ошибок
+     * @throws \App\Exceptions\DBException -обработчик ошибок
+     * @throws \App\Exceptions\NotFoundException -обработчик ошибок
      */
-    protected function save(string $class): void
+    protected function saveArticle(): void
     {
         if (isset($_POST['authorId']) && isset($_POST['title']) && isset($_POST['content'])) {
             $article = new \App\Models\Article();
@@ -29,14 +32,15 @@ class Admin extends Controller
                 'authorId' => $_POST['authorId']
             ];
             $article->fill($data);
-            $article->save($class);
+            $article->save(\App\Models\Article::class);
+
         }
         header('Location: /admin/');
     }
 
     /**
-     * @throws \App\Exceptions\DBException
-     * @throws \App\Exceptions\NotFoundException
+     * @throws \App\Exceptions\DBException -обработчик ошибок
+     * @throws \App\Exceptions\NotFoundException -обработчик ошибок
      */
     protected function delete(): void
     {
@@ -49,6 +53,10 @@ class Admin extends Controller
         header('Location: /admin/');
     }
 
+    /**
+     * @throws \App\Exceptions -обработчик ошибок
+     * @throws \App\Exceptions\DBException -обработчик ошибок
+     */
     protected function getTable()
     {
         $adminTable = new AdminDataTable(
@@ -77,7 +85,7 @@ class Admin extends Controller
     }
 
     /**
-     * @param null $params
+     * @param null $params - параметры
      * @throws \App\Exceptions\DBException
      */
     protected function handle($params = null): void

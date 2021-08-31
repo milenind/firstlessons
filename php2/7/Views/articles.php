@@ -26,21 +26,21 @@
 $articles = $this->articles;
 foreach ($articles
 
-as $article) { ?>
-<div>
-    <h1>
-        Автор статьи - <?= $article->author->name ?>
-    </h1>
-    <a href="/Article/viewArticle/?id=<?= $article->id ?>">
-        <h2>
-            Название статьи - <?= $article->title ?>
-        </h2>
-    </a>
-    <article>
-        <h2>Содержание </h2> <?= $article->content ?>
-    </article>
-    <hr>
-</div>
-    <?php } ?>
+         as $article) { ?>
+    <div>
+        <h1>
+            Автор статьи - <?= $article->author->name ?>
+        </h1>
+        <a href="/Article/viewArticle/?id=<?= $article->id ?>">
+            <h2>
+                Название статьи - <?= $article->title ?>
+            </h2>
+        </a>
+        <article>
+            <h2>Содержание </h2> <?= $article->content ?>
+        </article>
+        <hr>
+    </div>
+<?php } ?>
 </body>
 </html>

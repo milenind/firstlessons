@@ -29,7 +29,7 @@
 <?php } ?>
 <br>
 <div style="text-align: center">
-    <form action="/admin/save" method="POST">
+    <form action="/admin/saveArticle/" method="POST">
         <label>
             Id автора
             <input type="text" name="authorId">

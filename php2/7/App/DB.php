@@ -6,8 +6,12 @@ namespace App;
 use App\Exceptions\DBException;
 use PDO;
 
+/**
+ *
+ */
 class DB
 {
+    /** @var PDO -  */
     protected \PDO $dbh;
 
     /**
@@ -28,9 +32,9 @@ class DB
     }
 
     /**
-     * @param string $class
-     * @param string $sql
-     * @param array $data
+     * @param string $class - класс,объекты которого мы хотим получить
+     * @param string $sql - текст запроса
+     * @param array $data - параметры запроса
      * @return array|false
      * @throws DBException
      */
@@ -45,8 +49,8 @@ class DB
     }
 
     /**
-     * @param string $sql
-     * @param array $data
+     * @param string $sql - текст запроса
+     * @param array $data - параметры запроса
      * @return \Generator
      * @throws DBException
      */
@@ -64,7 +68,7 @@ class DB
 
     /**
      * @param string $sql - текст запроса
-     * @param $class - класс объекты которого мы хотим получить
+     * @param string $class - класс объекты которого мы хотим получить
      * @param array $data - параметры запроса
      * @throws DBException
      */
@@ -80,8 +84,8 @@ class DB
     }
 
     /**
-     * @param string $sql
-     * @param array $parameters
+     * @param string $sql - текст запроса
+     * @param array $parameters - параметры запроса
      * @return bool
      * @throws DBException
      */
@@ -89,6 +93,7 @@ class DB
     {
         $sth = $this->dbh->prepare($sql);
         $result = $sth->execute($parameters);
+
         if (!$result) {
             throw new DBException('Ошибка запроса');
         }
