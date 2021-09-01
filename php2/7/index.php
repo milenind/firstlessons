@@ -20,13 +20,14 @@ try {
     $controller($action);
 } catch (\App\Exceptions\DBException $exception) {
     \App\Logger::write($exception);
-    if ('Ошибка подключения к базе данных' === $exception->getMessage()) {
+
+  //  if ('Ошибка подключения к базе данных' === $exception->getMessage()) {
         \App\Mailer::send(new \App\Models\Message(
-                'Ошибка подключения к бд',
-                'Срочно чините подключение к бд!!!'
+                'Уведомление об ошибке',
+                'Ошибка при подключении к базе данных'
             )
         );
-    }
+    //}
     $controller = new \App\Controllers\DBException();
     $controller('handle', $exception);
 } catch (\App\Exceptions\NotFoundException $exception) {

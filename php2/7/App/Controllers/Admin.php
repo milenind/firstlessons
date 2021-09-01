@@ -5,9 +5,7 @@ namespace App\Controllers;
 use App\Controller;
 use App\Models\AdminDataTable;
 
-/**
- * класс для вьюшки Admin
- */
+
 class Admin extends Controller
 {
     /**
@@ -65,7 +63,7 @@ class Admin extends Controller
                     return $article->title;
                 },
                 'trimmedText' => function (\App\Models\Article $article) {
-                    return mb_strimwidth($article->content, 0, 5) . '...';
+                    return mb_strimwidth($article->content, 0, 50) . '...';
                 },
                 'id' => function (\App\Models\Article $article) {
                     return $article->id;

@@ -2,7 +2,6 @@
 
 namespace App;
 
-
 use App\Exceptions\DBException;
 use PDO;
 
@@ -11,7 +10,7 @@ use PDO;
  */
 class DB
 {
-    /** @var PDO -  */
+    /** @var PDO - */
     protected \PDO $dbh;
 
     /**
@@ -29,7 +28,10 @@ class DB
         } catch (\PDOException $exception) {
             throw new DBException('Ошибка подключения к базе данных');
         }
+
     }
+
+
 
     /**
      * @param string $class - класс,объекты которого мы хотим получить

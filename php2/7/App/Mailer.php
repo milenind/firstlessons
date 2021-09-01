@@ -12,19 +12,23 @@ class Mailer
      */
     public static function send(Message $message): bool
     {
-        $credentials = include __DIR__ . '/credentials.php';
-        $transport = (new \Swift_SmtpTransport('smtp.gmail.com', 587, 'tls'))
-            ->setUsername($credentials['mail'])->setPassword($credentials['password'])
-            ->setStreamOptions(['ssl' => array('allow_self_signed' => true, 'verify_peer' => false)]);
-
-        $mailer = (new \Swift_Mailer($transport));
-
-        $message = (new \Swift_Message($message->getTitle()))
-            ->setFrom([$credentials['mail']])
-            ->setTo(['givemeinstagram@mail.ru'])
-            ->setBody($message->getContent())
-            ->setContentType('text/html');
-
-        return $mailer->send($message);
+        $transport = (new \Swift_SmtpTransport('smtp.mail.ru', 465))
+            ->setUsername('xreloadx')
+            ->setPassword('911ddd11lll')
+            ->setEncryption('SSL');
+        $mailer = new \Swift_Mailer($transport);
+        $message = new \Swift_Message();
+        $message->setSubject('Уведомление об ошибке');
+        $message->setFrom(['xreloadx@mail.ru' => 'Тестовый отправитель']);
+        $message->addTo('reloadxx99@mail.ru', 'Тестовый получатель');
+        $message->setBody("Произошла ошибка подключения к базе данных 
+        \nНужно что-то починить,\nАдмин");
+        $result = $mailer->send($message);
+        if (!$result) {
+            echo 'Не удалось отправить сообщение об ошибке';
+        } else {
+            echo 'Сообщение об ошибке отправлено '. '<br>';
+        }
+        return $result;
     }
 }
